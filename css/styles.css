@@ -2,6 +2,7 @@
 
 :root {
     line-height: 1.5;
+    outline: auto; /* Remember to erase after finishing with the setup */
 }
   
 h1, h2, h3, h4, h5, figure, p, ol, ul {
@@ -24,3 +25,29 @@ img {
 }
 
 /* My custom styles */
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    > * {
+        outline: auto; /* Also remebmber to erase this */
+    }
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / -1;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 7;
+}
+
+.main-content {
+    display: grid;
+    grid-column: 2 / 7;
+    grid-row: 2 / -1;
+}
