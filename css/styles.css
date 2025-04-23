@@ -38,6 +38,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-shadow: var(--white) 1px 0 10px;
+}
+
+a:active {
+  color: var(--black);
+}
+
 /* My custom styles */
 
 .grid-container {
