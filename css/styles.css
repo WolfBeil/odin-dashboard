@@ -88,7 +88,7 @@ svg {
   font-weight: bold;
   display: grid;
   grid-row: 1 / -1;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   gap: 4rem;
 }
 
@@ -115,13 +115,14 @@ svg {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 8px;
+  row-gap: 12px;
   margin-left: 15px;
   margin-right: 10px;
 }
 
 .sidebar-middle img, .sidebar-bottom img {
-  height: auto;
-  max-width: 48px;
+  height: 40px;
+  width: auto;
 }
 
 .sidebar-bottom {
