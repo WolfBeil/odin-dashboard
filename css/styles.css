@@ -88,6 +88,8 @@ svg {
   font-weight: bold;
   display: grid;
   grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  width: auto;
   grid-template-rows: auto auto auto 1fr;
   gap: 4rem;
 }
