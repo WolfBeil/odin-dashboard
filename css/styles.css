@@ -108,6 +108,7 @@ svg {
   display: grid;
   grid-column: 2 / 7;
   background-color: var(--white);
+  border-bottom: 1px solid black;
 }
 
 .header-top {
@@ -147,7 +148,51 @@ svg {
 
 .header-bottom {
   display: grid;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 3fr 1fr;
+}
+
+.greeting {
+  display: grid;
+  grid-template-columns: 1fr, 7fr;
+  padding-bottom: 1rem;
+}
+
+.greeting img {
+  display: grid;
+  height: auto;
+  width: 4rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+.greeting div {
+  grid-column: 2 / 8;
+  display: grid;
+  > h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    align-self: end;
+  }
+  > h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.header-buttons button {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--cream);
+  font-weight: bold;
 }
 
 /* Main content */
