@@ -110,7 +110,7 @@ svg {
   max-width: 60px;
 }
 
-.sidebar-middle {
+.sidebar-middle, .sidebar-bottom {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -119,9 +119,13 @@ svg {
   margin-right: 10px;
 }
 
-.sidebar-middle img {
+.sidebar-middle img, .sidebar-bottom img {
   height: auto;
   max-width: 48px;
+}
+
+.sidebar-bottom {
+  align-items: start;
 }
 
 /* .sidebar {
