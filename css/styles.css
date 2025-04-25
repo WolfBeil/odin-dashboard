@@ -154,7 +154,7 @@ a:active {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.25rem;
   gap: 20px;
 }
 
@@ -181,7 +181,32 @@ a:active {
   }
   > h2 {
     align-self: start;
+    font-size: 1.7rem;
   }
+}
+
+.buttons-group {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.buttons-group button {
+  padding: 10px;
+  background-color: var(--greenish);
+  color: var(--char-white);
+  border-radius: 15px;
+  border: 1px solid var(--fill-blue);
+}
+
+.buttons-group button:hover {
+  background-color: var(--fill-blue);
+}
+
+.buttons-group button:active {
+  background-color: var(--char-white);
+  color: var(--fill-blue);
 }
 
 /* Main content */
