@@ -222,6 +222,12 @@ a:active {
   gap: 15px;
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
 /* Projects Section */
 
 .projects {
@@ -230,7 +236,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  gap: 5px;
+  gap: 10px;
   padding: 15px;
 }
 
