@@ -253,6 +253,21 @@ a:active {
   border-radius: 5%;
   border-left: 10px solid var(--greenish);
   box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px;
+  > h2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+}
+
+.card-icons {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  grid-template-columns: 1fr repeat(2, 32px);
+  > img {
+    height: auto;
+    width: 24px;
+  }
 }
 
 /* Announcements Section*/
