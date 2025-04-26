@@ -251,12 +251,21 @@ a:active {
   background-color: aliceblue;
   padding: 1rem;
   border-radius: 5%;
-  border-left: 10px solid var(--greenish);
+  border-left: 10px solid var(--soft-blue);
   box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
   > h2 {
     font-weight: bold;
     font-size: 1.25rem;
   }
+  > hr {
+    width: 100%;
+  }
+}
+
+.chapter-card {
+  border-color: var(--greenish);
 }
 
 .card-icons {
@@ -264,6 +273,8 @@ a:active {
   justify-items: end;
   align-items: end;
   grid-template-columns: 1fr repeat(2, 32px);
+  margin-top: auto;
+  padding-top: 2px;
   > img {
     height: auto;
     width: 24px;
