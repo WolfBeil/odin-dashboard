@@ -49,10 +49,9 @@ a:active {
 /* My custom styles */
 
 .grid-container {
-    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: min-content repeat(6, 1fr);
     background-color: var(--char-white);
 }
 
@@ -116,7 +115,7 @@ a:active {
   font-size: 1.5rem;
   display: grid;
   grid-column: 2 / -1;
-  grid-template-rows: auto auto;
+  grid-auto-rows: min-content;
   padding-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
@@ -285,8 +284,6 @@ a:active {
 /* Announcements Section*/
 
 .announcements {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
@@ -321,8 +318,6 @@ a:active {
 /* Trending Section */
 
 .trending {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
@@ -333,11 +328,19 @@ a:active {
 
 .trending-item {
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: auto 2fr;
   > img {
+    justify-self: end;
     border-radius: 50%;
-    height: auto;
-    width: 70;
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+  }
+}
+
+.trending-user-text {
+  > h3 {
+    font-weight: bold;
   }
 }
 
